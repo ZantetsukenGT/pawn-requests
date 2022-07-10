@@ -1,26 +1,25 @@
 {
-    "user": "Southclaws",
+    "user": "ZantetsukenGT",
     "repo": "pawn-requests",
     "entry": "test.pwn",
     "output": "test/gamemodes/test.amx",
-    "dependencies": ["Southclaws/samp-stdlib"],
+    "include_path": "pawn-includes",
+    "dependencies": ["pawn-lang/samp-stdlib"],
     "dev_dependencies": ["pawn-lang/YSI-Includes"],
     "runtime": {
-        "plugins": ["Southclaws/pawn-requests"]
+        "plugins": ["ZantetsukenGT/pawn-requests"]
     },
     "resources": [
         {
             "name": "pawn-requests-linux.zip",
             "archive": true,
             "platform": "linux",
-            "includes": ["includes"],
             "plugins": ["plugins/requests.so"]
         },
         {
             "name": "pawn-requests-windows.zip",
             "archive": true,
             "platform": "windows",
-            "includes": ["includes"],
             "plugins": ["plugins/requests.dll"],
             "files": {
                 "boost_date_time-vc141-mt-x32-1_68.dll": "boost_date_time-vc141-mt-x32-1_68.dll",
